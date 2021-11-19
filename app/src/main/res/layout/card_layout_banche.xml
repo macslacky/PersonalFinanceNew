@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:elevation="5dp"
+    app:cardCornerRadius="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/lytBancheLista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtBancheidBanca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txtBancheNomeBanca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/txtTitolo"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/saldo"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/txtDati" />
+
+            <TextView
+                android:id="@+id/txtBancheSaldo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/txtDati" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Entrate: "
+                android:layout_weight="1"
+                android:textColor="@color/colorEntrate"
+                android:textSize="@dimen/txtDati" />
+            <TextView
+                android:id="@+id/txtBancheSaldoEntrata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:textColor="@color/colorEntrate"
+                android:textSize="@dimen/txtDati" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="  " />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Uscite: "
+                android:layout_weight="1"
+                android:textColor="@color/colorUscite"
+                android:textSize="@dimen/txtDati" />
+            <TextView
+                android:id="@+id/txtBancheSaldoUscita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:textColor="@color/colorUscite"
+                android:textSize="@dimen/txtDati" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

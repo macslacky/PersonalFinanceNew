@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Personal Finance by RiboSoft</string>
+    <string name="saldo">Saldo: &#160;</string>
+    <string name="nomebanca">Nome Banca</string>
+    <string name="movBancaMovimenti">Movimenti</string>
+    <string name="dataInizio">Inizio:&#160;</string>
+    <string name="dataFine">Fine:&#160;</string>
+    <string name="filtro">Applica il filtro</string>
+
+    <string name="nuovabancasalva"> Salva i dati della nuova Banca</string>
+    <string name="nuovabancaannulla">Annulla la richiesta</string>
+    <string name="select_date">Seleziona data… </string>
+
+    <string name="data">Data</string>
+    <string name="valuta">Valuta</string>
+    <string name="entrata">Entrata</string>
+    <string name="uscita">Uscita</string>
+
+    <!-- menu -->
+    <string name="main_NuovaBanca">Nuova Banca</string>
+    <string name="main_about">about</string>
+
+    <string name="movbanca_NewMovimento">Nuovo Movimento</string>
+    <string name="movbanca_ListaBanche">Lista Banche</string>
+    <string name="movbanca_about">about</string>
+</resources>

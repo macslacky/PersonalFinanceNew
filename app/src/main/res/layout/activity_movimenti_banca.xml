@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MovimentiBancaActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+            <TextView
+            android:id="@+id/txtMovNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#80BBDEFB"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/txtTitolo"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#80BBDEFB"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/saldo"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/txtDati" />
+
+            <TextView
+                android:id="@+id/txtMovSaldo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorEntrate"
+                android:textSize="@dimen/txtDati" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#BBDEFB"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/movBancaMovimenti"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/txtDati" />
+            <ImageButton
+                android:id="@+id/ibtnMovFiltra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/filtra20a" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lnlFiltro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dataInizio"
+                        android:textSize="@dimen/txtDati" />
+                    <TextView
+                        android:id="@+id/txtMovDataInizio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:hint="@string/select_date"
+                        android:textSize="@dimen/txtDati" />
+                    <ImageButton
+                        android:id="@+id/ibtnMovDataInizio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        app:srcCompat="@drawable/calendar20" />
+                </LinearLayout>
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dataFine"
+                        android:textSize="@dimen/txtDati" />
+                    <TextView
+                        android:id="@+id/txtMovDataFine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:hint="@string/select_date"
+                        android:textSize="@dimen/txtDati" />
+                    <ImageButton
+                        android:id="@+id/ibtnMovDataFine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        app:srcCompat="@drawable/calendar20" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/ibtnMovApplicaFiltro"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@drawable/enter20" />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcwMovListaMovimenti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
